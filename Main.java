@@ -1,12 +1,11 @@
+import tools.AdvanceCalculator;
+import   tools.NormalCalculator;
 public class Main{
     public static void main(String[] args){
-        // System.out.println("Hello world");
-        Car car1= new Car("Ferrari", "F50", "Red", 2);
-        car1.setDetails("Rasel", "346sg", "green", 4);
-        // System.out.println(car1.getDetails());
-
-        Car car2=new Car();
-        System.out.println(car2.getDetails());
-
+        AdvanceCalculator calculator=new AdvanceCalculator();
+        int result=calculator.add(10,20);
+        NormalCalculator  normal_calculator=new NormalCalculator();
+        int result2=normal_calculator.add(10,20);
+        System.out.println(result2);
     }
 }
